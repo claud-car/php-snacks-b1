@@ -1,5 +1,6 @@
 <?php
-    // Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno
-    // avrà Nome, Cognome e un array contenente i suoi voti scolastici.
-    // Stampare Nome, Cognome e la media dei voti di ogni alunno.
+    // Creare un array di array.
+    // Ogni array figlio avrà come chiave una data in questo formato: DD/MM/YYYY
+    // (ad es 31/01/2007) e come valore un array di post associati a quella data.
+    // Stampare ogni data con i relativi post.
 ?>
