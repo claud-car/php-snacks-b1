@@ -5,19 +5,26 @@
     // Stampare ogni data con i relativi post.
     $post= [
         '10/10/2010' => [
+            [
             'title' => 'titolo',
             'autore' => 'author',
             'text' => 'testo2010'
+            ]
         ],
         '10/10/2011' => [
+            [
             'title' => 'titolo',
             'autore' => 'author',
             'text' => 'testo2011'
+            ]
         ],
         '10/10/2012' => [
+
+            [
             'title' => 'titolo',
             'autore' => 'author',
             'text' => 'testo2012'
+            ]
         ]
 
     ];
@@ -26,25 +33,28 @@
 
 <p>
 
+</p>
+
 <?php
     $post_keys= array_keys($post);
 
-    var_dump($post['10/10/2010']);
+    var_dump($post);
     
 
     for ($i=0; $i < count($post_keys); $i++) {
         // echo $post_keys[$i];
         // var_dump($post[$post_keys[$i]]);
-        $posts_bykey = $post[$post_keys[$i]];
+        $posts_by_key = $post[$post_keys[$i]];
+        // var_dump($posts_bykey);
 
-        for ($j=0; $j < count($posts_bykey); $j++) { 
+        for ($j=0; $j < count($posts_by_key); $j++) { 
 
-            $post = $posts_bykey[$j];
+            $prova = $posts_bykey[$j];
 
-            // var_dump($posts_bykey[$j]);
-            echo  $post['title'] . "<br>";
+            //var_dump($posts_bykey[$j]);
+            echo  $posts['title'] . "<br>";
         }
     }  
 ?>
 
-</p>
+
